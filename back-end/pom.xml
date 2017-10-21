@@ -22,6 +22,8 @@
 		<java.version>1.8</java.version>
 		<org.slf4j-version>1.7.25</org.slf4j-version>
 		<easymock.version>3.4</easymock.version>
+		<io.springfox.springfox-swagger2>2.7.0</io.springfox.springfox-swagger2>
+		<io.springfox.springfox-swagger-ui>2.7.0</io.springfox.springfox-swagger-ui>
 	</properties>
 
 	<dependencies>
@@ -75,6 +77,20 @@
 			<artifactId>easymock</artifactId>
 			<version>${easymock.version}</version>
 			<scope>test</scope>
+		</dependency>
+
+		<!-- Include swagger for API description -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>${io.springfox.springfox-swagger2}</version>
+		</dependency>
+
+		<!-- Include swagger for API description UI -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>${io.springfox.springfox-swagger-ui}</version>
 		</dependency>
 
 	</dependencies>
