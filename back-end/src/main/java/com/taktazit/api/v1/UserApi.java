@@ -24,6 +24,7 @@ public class UserApi {
     @GetMapping("/{username}")
     public UserDTO getUser(@Valid @PathVariable String username) {
         User user = userService.findByUsername(username);
+        user.setPassword("");
         return UserMapper.makeUserDTO(user);
     }
 

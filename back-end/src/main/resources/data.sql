@@ -1,6 +1,6 @@
 ---
-INSERT INTO user (id,username, password) VALUES(1, 'user1', '123456');
-INSERT INTO user (id,username, password) VALUES(2, 'user2', '123456');
+INSERT INTO user (id,username, password) VALUES(1, 'user1', '$2a$11$rvVOUPp/XS2VFsdHX6P4l.pCBM5LLWeRiPKmRl0NMTNxVQEdJOepe');
+INSERT INTO user (id,username, password) VALUES(2, 'user2', '$2a$11$rvVOUPp/XS2VFsdHX6P4l.pCBM5LLWeRiPKmRl0NMTNxVQEdJOepe');
 ---
 INSERT INTO role (id,name) VALUES(1, 'ADMIN');
 INSERT INTO role (id,name) VALUES(2, 'USER');
