@@ -32,7 +32,7 @@ public class UserApi {
         User user = UserMapper.makeUser(userDTO);
         userService.save(user);
 
-        securityService.autoLogin(user.getUsername(), user.getPassword());
+        securityService.autoLogin(userDTO.getUsername(), userDTO.getPassword());
 
         return true;
     }
